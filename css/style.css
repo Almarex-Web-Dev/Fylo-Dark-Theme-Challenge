@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(217, 28%, 14%);
+    color: #fff;
+    font-family: 'Open sans', sans-serif;
+}
+
+nav{
+    width: 85%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 130px;
+    height: auto;
+    cursor: pointer;
+}
+ul.navbar{
+    list-style: none;
+    display: flex;
+}
+ul.navbar li{
+    width: 100px;
+}
+ul.navbar li a{
+    color: #fff;
+    text-decoration: none;
+}
+ul.navbar li a:hover{
+    text-decoration: underline;
+}
+.section-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center; 
+}
+.illustration-intro{
+    width: 470px;
+    margin-bottom: 30px;
+}
+.intro-desc{
+    width: 600px;
+    font-family: 'Open sans', sans-serif;
+}
+.intro-desc h1{
+    line-height: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+.intro-desc p{
+    width: 500px;
+    line-height: 1.6rem;
+    font-weight: 700px;
+    margin: 0 auto 30px;
+}
+.section-1 #btn{
+    width: 250px;
+    padding: 14px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background: #59d6be;
+}
+.bg-curvy{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    top: -210px;
+    z-index: -1;
+   
+}
+.section-2{
+    width: 100%;
+    height: auto;
+    background: hsl(218, 28%, 13%);
+    position: relative;
+    top: -210px;
+    z-index: -1;
+}
+
+.services{
+    width: 70%;
+    min-height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+.service-wrapper{
+    margin: 30px 0;
+}
+.service-wrapper img{
+    width: 70px;
+    height: auto;
+    margin-bottom: 25px;
+}
+.service-desc{
+    width: 400px;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+.service-desc h2{
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+} 
+
+/*Section3 starts here*/
+
+.section-3 img{
+    width: 550px;
+    height: auto;
+}
+.section-3{
+    width: 85%;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-3-desc{
+    width: 550px; 
+}
+.section-3-desc h1{
+    font-size: 2rem;
+    width: 300px;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+.section-3-desc p{
+    margin-bottom: 30px;
+}
+.section-3-desc a{
+    color: #fff;
+    margin-right: 5px;
+}
+
+/*Testimonial Section*/
+/*Testimonial Section*/
+
+.testimonial-section{
+    width: 90%;
+    min-height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+.testimonial-section::after{
+    content: url(../images/bg-quotes.png);
+    position: absolute;
+    top: 105px;
+    left: -10px;
+}
+.testimonial-card{
+    width: 385px;
+    height: 200px;
+    background: hsl(219, 30%, 18%);
+    padding: 25px 15px;
+    box-shadow: 2px 2px 3px hsl(217, 27%, 20%);
+    z-index: 1;
+}
+.testimonial-desc{
+    width: 345px;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+.profile-wrapper{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    background: url(../images/profile-1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.profile-desc span{
+    font-size: 14px;
+    color: #f3f3f3;
+}
+.profile-2{
+    background: url(../images/profile-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.profile-3{
+    background: url(../images/profile-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Sign Up section*/
+/*Sign Up section*/
+
+.sign-up-section{
+    width: 60%;
+    height: 35vh;
+    margin: auto;
+    background: hsl(219, 30%, 18%);
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    top: 50px;
+    box-shadow: 4px 5px 5px rgba(0,0,0,0.5); 
+}
+.sign-up-desc h1{
+    margin-bottom: 15px;
+}
+form{
+    margin-top: 30px;
+}
+input[type="email"]{
+    width: 500px;
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    margin-right: 25px;
+}
+input[type="submit"]{
+    width: 200px;
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: #59d6be;
+    color: #fff;
+}
+
+/*Footer section starts here*/
+/*Footer section starts here*/
+
+footer{
+    width: 100%;
+    height: 60vh;
+    background: hsl(216, 53%, 9%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+footer .logo{
+    position: relative;
+    top: 100px;
+    left: 60px;
+}
+.footer-body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.location{
+    width: 350px;
+      display: flex;
+}
+li{
+    list-style: none;
+    line-height: 2rem;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+.fas{
+    margin-right: 15px;
+}
+.fab{
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+a .fab{
+    color: #fff;
+    text-decoration: none;
+}
+.fab:hover{
+    color: #59d6be;
+}
+.footer-bottom{
+    width: 100%;
+    height: 10vh;
+    background: hsl(217, 27%, 18%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.footer-bottom span{
+    color: #59d6be;
+}
+
+
+
+/*Media queria section for small devices*/
+/*Media queria section for small devices*/
+
+@media screen and (max-width: 375px){
+    nav{
+    width: 90%;
+}
+.logo{
+    width: 70px;
+    height: auto;
+}
+
+ul.navbar li{
+    width: 70px;
+    margin-right: 5px;
+}
+ul.navbar li:nth-child(3){
+    width: 50px;
+}
+ul.navbar li:nth-child(2){
+    width: 50px;
+}
+.section-1{
+    width: 300px; 
+    margin: auto;
+}
+.illustration-intro{
+    width: 350px;
+}
+.intro-desc{
+    width: 300px;
+    margin: auto;
+}
+.intro-desc h1{
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+.intro-desc p{
+    width: 318px;
+    line-height: 1.5rem;
+}
+.section-1 #btn{
+    width: 200px;
+}
+.bg-curvy{
+   display: none;
+  }
+    
+/*    Media query for section2*/
+/*    Media query for section2*/
+    
+
+.services{
+    width: 85%;
+    margin: 250px auto 0;
+    
+}
+.service-wrapper img{
+    width: 60px;
+    height: auto;
+}
+.service-desc{
+    width: 300px;
+    margin: auto;
+}
+.service-desc h2{
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+.service-desc-p{
+     font-size: 14px;
+     width: 200px;
+}
+    
+        /*Section three starts here*/
+.section-3{
+    margin-top: 0;  
+}
+    
+.section-3 img{
+    width: 300px;
+    height: auto;
+}
+
+.section-3-desc h1{
+    font-size: 1rem;
+    margin: 15px 0;
+}
+.section-3-desc p{
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+    
+        /*Testimonial section*/
+        /*Testimonial section*/
+    
+.testimonial-section{
+    width: 90%;
+    min-height: 100vh;
+    margin: 100px auto 0;
+}
+.testimonial-section::after{
+    content: url(../images/bg-quotes.png);
+    position: absolute;
+    top: -30px;
+    left: -10px;
+}
+.testimonial-card{
+    width: 350px;
+    height: 230px;
+    margin-bottom: 25px;
+}
+.testimonial-desc{
+    width: 310px;
+}
+    
+    /*Sign Up section*/
+/*Sign Up section*/
+
+.sign-up-section{
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+.sign-up-desc{
+        width: 300px;
+}
+.sign-up-desc h1{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.sign-up-desc p{
+    font-size: 14px;
+}
+
+input[type="email"]{
+    width: 300px;
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    width: 300px;
+   
+}
+
+        /*Footer section starts here*/
+    
+footer{
+    width: 100%;
+    height: 120vh;
+}
+footer .logo{
+    width: 120px;
+    position: relative;
+    top: 80px;
+    left: 30px;
+    margin-bottom: 50px;
+}
+.footer-body{
+    width: 85%;
+    flex-direction: column;
+}
+.footer-body p{
+    font-size: 14px;
+    margin-bottom: 35px;
+    line-height: 1.2rem;
+}
+.about-us{
+    margin: 30px 0;
+}
+    .social-links{
+        width: 35%;
+        margin: 15px auto 0;
+    }
+.fab{
+    font-size: 10px;
+  
+}
+.footer-bottom{
+    height: 8vh;
+    font-size: 0.875rem;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
